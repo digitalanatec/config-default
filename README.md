@@ -1,5 +1,6 @@
 # Default Configuração Django
-Configuração default completa que utilizo no meus projetos. 
+
+Configuração base default que utilizo no meus projetos.
 
 Espero que ajude !!!
 
