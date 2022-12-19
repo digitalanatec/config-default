@@ -7,7 +7,7 @@ Esse é link do repositório [Link](https://github.com/djangomy/config-default)
 
 Django: Configuração de Projeto Padrão (Completo) [Link](https://leticia.up.railway.app/document-view/configuracao-default-de-projeto-completo)
 
-🟩 Ambiente Virtual Linux/Windows
+<p>🟩 Ambiente Virtual Linux/Windows</p>
 🟩 Criando o Projeto
 🟩 Arquivos Static
 🟩 Variáveis de Ambiente
