@@ -1,6 +1,6 @@
 # Configuração Padrão (Completa)
 
-Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
+Esse é o padrão de configuração de projeto que utilizo.
 
 **Configurações Iniciais**
 
