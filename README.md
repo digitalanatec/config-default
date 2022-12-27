@@ -39,7 +39,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details> 
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary> 
+<details><summary><b>Criando o Projeto</b></summary> 
 
 - **Criando o Projeto**
     
@@ -55,13 +55,11 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     
     ```python
     python manage.py runserver
-    ```
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b413a084-7ed1-4480-a648-5049cebeba61/Untitled.png)
+    ``` 
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>
+<details><summary><b>Arquivos Static</b></summary>
 
 - **Arquivos Static**
     
@@ -116,7 +114,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>
+<details><summary><b>Variáveis de Ambiente</b></summary>
 
 - **Variáveis de Ambiente**
     
@@ -216,7 +214,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>
+<details><summary><b>CORS HEADERS</b></summary>
 
 - **CORS HEADERS**
     
@@ -280,7 +278,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>    
+<details><summary><b>LOGS</b></summary>    
 
 - **LOGS**
     
@@ -340,7 +338,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>
+<details><summary><b>Timeout</b></summary>
 
 - **Timeout**
     
@@ -376,7 +374,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     ```
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>
+<details><summary><b>Arquivo Context Processors</b></summary>
 
 - **Arquivo Context Processors**
     
@@ -417,7 +415,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     Feito essa configuração o contexto “social” se torna Global no seu projeto. Assim você pode chamado em qualquer aplicativo do seu projeto.
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>    
+<details><summary><b>Aplicativo Base (templates, statics)</b></summary>    
 
 - **Aplicativo Base (templates, statics)**
     
@@ -432,15 +430,11 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     
     Agora precisamos registrar nossa aplicação no *INSTALLED_APPS* localizado em *settings.py*.
     
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4dbe2a6-20b5-409c-a20e-a55e0492eb58/Untitled.png)
-    
     Apos criar app base pode criar as pastas nessa estrutura. 
     
     1- pasta ***“templates”*** dentro dela colocar **base.html** (vazia por enquanto)
     
     2 - pasta ***“static”*** dentro dela criar pastas **css, image, js.** Cria os arquivos, style.css e javascript.js.
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8894b8c-5ba8-41e5-85f5-21825cd1e713/Untitled.png)
     
     ## Template Base
     
@@ -480,7 +474,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     ```
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>    
+<details><summary><b>Django Message</b></summary>    
 
 - **Django Message**
     
@@ -488,8 +482,6 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     **Configura mensagem.**
     
     Documentação: [https://docs.djangoproject.com/en/4.1/ref/contrib/messages/](https://docs.djangoproject.com/en/4.1/ref/contrib/messages/)
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7313211f-5540-4cf8-9a58-8aa5d6b87718/Untitled.png)
     
     Nossa biblioteca tem essas configurações de mensagens ativas. Que funciona perfeitamente, mas precisamos renderizar isso no *frontend*. Como estamos utilizando *bootstrap* precisamos adicionar essa configuração no *settings.py* do seu projeto. Adicionando essa configuração as mensagens de alerta aparecerá com as classes do bootstrap.
     
@@ -532,7 +524,7 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
 
 </details>
 
-<details><summary><b>aaaaaaaaaaaaa</b></summary>    
+<details><summary><b>Criando Aplicativo</b></summary>    
 
 - **Criando Aplicativo** 
 
@@ -545,8 +537,6 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     ```
     
     Agora precisamos registrar nossa aplicação no *INSTALLED_APPS* localizado em *settings.py*.
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c60b799e-edec-4c58-b8b3-35ca714f1ea5/Untitled.png)
     
     *myapp*/*templates*/*index.html*
     
@@ -603,7 +593,5 @@ Padrão de configuração de projeto que utilizo. Esse padrão é mais completo.
     python manage.py makemigrations && python manage.py migrate
     python manage.py runserver
     ```
-    
-    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cda72dc9-de6c-49a6-8797-805a2966f9e4/Untitled.png)
 
 </details>
