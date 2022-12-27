@@ -10,16 +10,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
-from pathlib import Path
 from dotenv import load_dotenv
 from corsheaders.defaults import default_headers
 
-
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 
 load_dotenv(os.path.join(BASE_DIR, ".env"))
@@ -62,10 +60,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     'corsheaders',
-
     'base',
-
     'myapp',
 ]
 
@@ -79,9 +76,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'requestlogs.middleware.RequestLogsMiddleware', 
-    
-
+    'requestlogs.middleware.RequestLogsMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -126,7 +121,6 @@ REST_FRAMEWORK={
     'EXCEPTION_HANDLER': 'requestlogs.views.exception_handler',
 }
 
-
 # Logs
 LOGGING = {
     'version': 1,
@@ -152,7 +146,6 @@ REQUESTLOGS = {
     'METHODS': ('PUT', 'PATCH', 'POST', 'DELETE'),
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -172,7 +165,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-# timeout tempo de inatividate no sistema
+# Session Expire (Timeout)
 SESSION_EXPIRE_SECONDS = 1800 
 SESSION_EXPIRE_AFTER_LAST_ACTIVITY = True
 #SESSION_EXPIRE_AFTER_LAST_ACTIVITY_GRACE_PERIOD = 60  
@@ -213,7 +206,7 @@ MEDIA_URL = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Se tiver configuração de email
+# Configuration E-mail Host
 EMAIL_HOST = os.getenv('EMAIL_HOST')
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD') 
@@ -221,7 +214,6 @@ EMAIL_PORT = os.getenv('EMAIL_PORT')
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS') 
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
-
 
 
 # --- Messages --- #
